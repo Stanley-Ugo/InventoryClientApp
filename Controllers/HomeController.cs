@@ -27,6 +27,7 @@ namespace InventoryClientApp.Controllers
             return View();
         }
 
+        //Login User Method
         public async Task<IActionResult> LoginUser(UserInfo user)
         {
             using (var httpClient = new HttpClient())
