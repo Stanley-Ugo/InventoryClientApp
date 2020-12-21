@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventoryClientApp.Models
 {
+    //UserInfo Model Class
     public class UserInfo
     {
         [Key]
