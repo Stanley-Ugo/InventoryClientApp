@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventoryClientApp.Models
 {
+    //Products Model Class
     public class Product
     {
         [Key]
