@@ -48,6 +48,7 @@ namespace InventoryClientApp.Controllers
             }
         }
 
+        //Logout Method
         public IActionResult Logoff()
         {
             HttpContext.Session.Clear();
