@@ -39,12 +39,13 @@ namespace InventoryClientApp.Controllers
             return res;
         }
 
-        //Create Product
+        //Create Product Get Method
         public IActionResult Create()
         {
             return View();
         }
 
+        //Create Product Post Method
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProdId, ProdName, Category, UnitPrice, StockQty")] Product product)
