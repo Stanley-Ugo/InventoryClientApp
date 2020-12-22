@@ -62,6 +62,7 @@ namespace InventoryClientApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //Product Edit Get Method
         public async Task<IActionResult> Edit(int? id)
         {
             if( id == null)
