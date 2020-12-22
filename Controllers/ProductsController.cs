@@ -14,6 +14,7 @@ namespace InventoryClientApp.Controllers
 {
     public class ProductsController : Controller
     {
+        //the API Url
         public static string baseUrl = "https://localhost:44360/api/products/";
         public async Task<IActionResult> Index()
         {
