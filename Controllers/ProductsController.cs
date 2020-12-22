@@ -86,6 +86,7 @@ namespace InventoryClientApp.Controllers
             return View(res);
         }
 
+        //Edit Product Post Method
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProdId, ProdName, Category, UnitPrice, StockQty")] Product product)
