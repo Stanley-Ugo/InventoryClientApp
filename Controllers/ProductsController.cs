@@ -23,6 +23,7 @@ namespace InventoryClientApp.Controllers
         }
 
 
+        //Get Products Method
         [HttpGet]
         public async Task<List<Product>> GetProducts()
         {
