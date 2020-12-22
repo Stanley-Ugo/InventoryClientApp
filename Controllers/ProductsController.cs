@@ -127,6 +127,17 @@ namespace InventoryClientApp.Controllers
             return View(res);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var accessToken = HttpContext.Session.GetString("JWToken");
+            var url = baseUrl + id;
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
+            await client.DeleteAsync(url);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
