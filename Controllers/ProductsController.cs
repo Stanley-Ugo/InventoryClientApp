@@ -39,6 +39,7 @@ namespace InventoryClientApp.Controllers
             return res;
         }
 
+        //Create Product
         public IActionResult Create()
         {
             return View();
