@@ -105,5 +105,28 @@ namespace InventoryClientApp.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if ( id == null)
+            {
+                return NotFound();
+            }
+            var accessToken = HttpContext.Session.GetString("JWToken");
+            var url = baseUrl + id;
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+            string jsonStr = await client.GetStringAsync(url);
+            var res = JsonConvert.DeserializeObject<Product>(jsonStr);
+
+            if ( res == null)
+            {
+                return NotFound();
+            }
+            return View(res);
+        }
+
+
     }
 }
