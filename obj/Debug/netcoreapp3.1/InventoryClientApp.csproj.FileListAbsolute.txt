@@ -114,3 +114,4 @@ C:\Projects\InventoryClientApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Inde
 C:\Projects\InventoryClientApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
 C:\Projects\InventoryClientApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
 C:\Projects\InventoryClientApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Delete.cshtml.g.cs
+C:\Projects\InventoryClientApp\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
