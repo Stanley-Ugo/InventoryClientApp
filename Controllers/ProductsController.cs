@@ -106,6 +106,7 @@ namespace InventoryClientApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //Delete Method Get
         public async Task<IActionResult> Delete(int? id)
         {
             if ( id == null)
