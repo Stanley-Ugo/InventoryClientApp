@@ -142,6 +142,7 @@ namespace InventoryClientApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //Details MEthod
         public async Task<IActionResult> Details(int? id)
         {
             if ( id == null)
