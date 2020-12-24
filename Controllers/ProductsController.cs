@@ -128,6 +128,7 @@ namespace InventoryClientApp.Controllers
             return View(res);
         }
 
+        //Delete Method POST
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
