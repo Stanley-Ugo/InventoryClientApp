@@ -14,6 +14,8 @@ namespace InventoryClientApp.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public int ProdId { get; set; }
+
+        [Required]
         public string ProdName { get; set; }
         public string Category { get; set; }
         public decimal UnitPrice { get; set; }
