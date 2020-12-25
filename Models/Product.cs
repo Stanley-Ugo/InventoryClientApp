@@ -17,6 +17,8 @@ namespace InventoryClientApp.Models
 
         [Required]
         public string ProdName { get; set; }
+
+        [Required]
         public string Category { get; set; }
         public decimal UnitPrice { get; set; }
         public int StockQty { get; set; }
